@@ -1,7 +1,9 @@
-# 은쪽이 상담 서비스 플랫폼
+# 심리 상담 서비스 플랫폼
 
 
-[GSITM 4기] TEAM은쪽의 Repository
+[GSITM 4기] TEAM HoneyBeeeee의 Repository
+
+프로젝트 : BuzzyBee
 
 노션 https://www.notion.so/efb8ebb472344c92bdacb804bdf21418
 
