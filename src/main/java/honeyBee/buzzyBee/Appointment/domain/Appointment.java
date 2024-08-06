@@ -31,7 +31,7 @@ public class Appointment {
     @Enumerated(value = EnumType.STRING)
     private AppointmentType appointmentType;
 
-    public Appointment() {
+    protected Appointment() {
     }
 
     public Appointment(Status status, AppointmentType appointmentType, Consultant consultant, LocalDateTime appointmentDateTime) {

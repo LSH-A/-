@@ -1,5 +1,8 @@
 package honeyBee.buzzyBee.ChatRoom;
 
+import honeyBee.buzzyBee.Appointment.domain.Appointment;
+import honeyBee.buzzyBee.Consultant.domain.Consultant;
+import honeyBee.buzzyBee.User.domain.User;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -26,7 +29,7 @@ public class ChatRoom {
 	private LocalDateTime createdAt;
 
 	// Constructors, getters, and setters
-	public ChatRoom() {}
+	protected ChatRoom() {}
 
 	public ChatRoom(Appointment appointment, User user, Consultant consultant, LocalDateTime createdAt) {
 		this.appointment = appointment;

@@ -26,7 +26,7 @@ public class Consultant {
 
     private String hospitalAddress;
 
-    public Consultant() {
+    protected Consultant() {
     }
 
     public Consultant(String name, String specialty, String career, String password, String phoneNumber, Double consultationFee, String hospitalAddress) {
