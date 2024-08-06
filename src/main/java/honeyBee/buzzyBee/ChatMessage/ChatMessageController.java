@@ -7,9 +7,9 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/chatmessages")
 public class ChatMessageController {
 
-	private final ChatMessageRepository chatMessageRepository;
-	
-	public ChatMessageController(ChatMessageRepository chatMessageRepository) {
-		this.chatMessageRepository = chatMessageRepository;
+	private final ChatMessageService chatMessageService;
+
+	public ChatMessageController(ChatMessageService chatMessageService) {
+		this.chatMessageService = chatMessageService;
 	}
 }
