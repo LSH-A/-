@@ -1,6 +1,7 @@
 package honeyBee.buzzyBee.ChatMessage;
 
 import honeyBee.buzzyBee.ChatRoom.ChatRoom;
+import honeyBee.buzzyBee.User.domain.User;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -25,7 +26,7 @@ public class ChatMessage {
 	
 	private LocalDateTime sendTime;
 	
-	public ChatMessage() {
+	protected ChatMessage() {
 	}
 	
 	public ChatMessage(ChatRoom chatRoom, String comment, Long id, LocalDateTime sendTime,

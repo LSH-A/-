@@ -22,7 +22,7 @@ public class User {
 
     private String ssn;
 
-    public User() {
+    protected User() {
     }
 
     public User(String name, String email, String password, String phoneNumber, String ssn) {

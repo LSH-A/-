@@ -1,5 +1,7 @@
 package honeyBee.buzzyBee.payment;
 
+import honeyBee.buzzyBee.Appointment.domain.Appointment;
+import honeyBee.buzzyBee.User.domain.User;
 import jakarta.persistence.*;
 
 import java.time.LocalDateTime;
@@ -11,11 +13,11 @@ public class Payment {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-//    @ManyToOne
-//    private User user;
+    @ManyToOne
+    private User user;
 
-//    @OneToOne
-//    private appointment appointment;
+    @OneToOne
+    private Appointment appointment;
 
     private Double amount;
 
@@ -27,30 +29,30 @@ public class Payment {
     private LocalDateTime paymentDateTime;
 
 
-    public Payment() {
+    protected Payment() {
     }
 
-//    public Payment(User user, appointment appointment, Double amount, Boolean status, PaymentType type, LocalDateTime paymentDateTime) {
-//        this.user = user;
-//        this.appointment = appointment;
-//        this.amount = amount;
-//        this.status = status;
-//        this.type = type;
-//        this.paymentDateTime = paymentDateTime;
-//    }
+    public Payment(User user, Appointment appointment, Double amount, Boolean status, PaymentType type, LocalDateTime paymentDateTime) {
+        this.user = user;
+        this.appointment = appointment;
+        this.amount = amount;
+        this.status = status;
+        this.type = type;
+        this.paymentDateTime = paymentDateTime;
+    }
 
 
     public Long getId() {
         return id;
     }
 
-//    public User getUser() {
-//        return user;
-//    }
+    public User getUser() {
+        return user;
+    }
 
-//    public appointment getAppointment() {
-//        return appointment;
-//    }
+    public Appointment getAppointment() {
+        return appointment;
+    }
 
     public Double getAmount() {
         return amount;
